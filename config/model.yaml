@@ -1,0 +1,10 @@
+model: yolo11n.pt
+imgsz: 640
+batch: 16
+epochs: 50
+patience: 20
+lr0: 0.015
+device: mps
+seed: 42
+save_period: 1
+optimizer: AdamW
