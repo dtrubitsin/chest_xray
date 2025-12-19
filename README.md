@@ -1,4 +1,4 @@
-# ChestXray NIHYOLO Baseline
+# ChestXray NIH YOLO Baseline
 
 Baseline multiclass object detector for NIH ChestXray bounding boxes using
 Ultralytics YOLO, tested with Apple MPS acceleration.
@@ -89,10 +89,6 @@ Creates metrics under `runs/eval/chestxray-eval` and optional predictions under
 - **Use domain-appropriate augmentations & preprocessing**:
   - Keep geometry changes realistic (avoid extreme perspective/rotation for frontal CXR).
   - Add intensity-only transforms (contrast/brightness/gamma, CLAHE) via Albumentations; keep bbox-safe transforms.
-
-- **Improve label quality & bbox conventions**:
-  - Clip bboxes to image bounds, remove degenerate boxes, and audit a sample of labels visually.
-  - Standardize how you handle images without boxes (true negatives) vs missing annotations.
 
 - **Leverage external data / pretraining**:
   - Initialize from a detector pretrained on a similar CXR bbox dataset or pseudo-label additional NIH images and fine-tune.

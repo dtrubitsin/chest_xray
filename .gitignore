@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+
+# Environments
+.venv/
+venv/
+ENV/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Training outputs
+runs/
+
+# Data artifacts (keep labels/splits tracked if desired)
+data/raw/
+data/images/
+*.pt
